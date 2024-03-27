@@ -1,11 +1,11 @@
 import React from 'react';
 import './Footer.css';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faCloud,
 } from "@fortawesome/free-solid-svg-icons"
+import { Button, ButtonGroup } from '@chakra-ui/react'
 
 function Footer() {
   return (

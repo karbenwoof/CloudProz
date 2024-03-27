@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faCloud,
 } from "@fortawesome/free-solid-svg-icons"
+import { Button, ButtonGroup } from '@chakra-ui/react'
+import { Link as ReactRouterLink } from 'react-router-dom'
+import { Link as ChakraLink, LinkProps } from '@chakra-ui/react'
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -51,7 +53,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Services
+                Why us?
               </Link>
             </li>
             <li className='nav-item'>
@@ -60,7 +62,7 @@ function Navbar() {
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
-                Products
+                Product
               </Link>
             </li>
 
@@ -74,7 +76,13 @@ function Navbar() {
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle='btn--outline'>SIGN UP</Button>}
+          {button && <ChakraLink as={ReactRouterLink} to='/sign-up'>
+              <Button colorScheme='gray' variant='outline' size='md'>
+              SIGN UP
+              </Button>
+            </ChakraLink>
+            }
+
         </div>
       </nav>
     </>
