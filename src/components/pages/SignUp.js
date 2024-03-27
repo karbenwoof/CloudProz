@@ -26,7 +26,7 @@ export default function SignUp() {
             onChange={(event) => setName(event.target.value)}
             size='lg'
             width='120%'
-            variant='filled'
+            variant='outline'
             borderColor='gray.300'
             name='name'
           ></Input>
@@ -37,7 +37,7 @@ export default function SignUp() {
             onChange={(event) => setEmail(event.target.value)}
             size='lg'
             width='120%'
-            variant='filled'
+            variant='outline'
             borderColor='gray.300'
             name='email'
           ></Input>
@@ -48,7 +48,7 @@ export default function SignUp() {
             onChange={(event) => setPurpose(event.target.value)}
             size='lg'
             width='120%'
-            variant='filled'
+            variant='outline'
             borderColor='gray.300'
             name='purpose'
           ></Input>

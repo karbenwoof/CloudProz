@@ -77,7 +77,7 @@ function Navbar() {
             </li>
           </ul>
           {button && <ChakraLink as={ReactRouterLink} to='/sign-up'>
-              <Button colorScheme='gray' variant='outline' size='md'>
+              <Button colorScheme='gray' variant='solid' size='md'>
               SIGN UP
               </Button>
             </ChakraLink>
