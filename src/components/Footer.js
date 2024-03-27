@@ -12,7 +12,7 @@ function Footer() {
     <div className='footer-container'>
       <section className='footer-subscription'>
         <p className='footer-subscription-heading'>
-          Join our newsletter to receive our best deals!
+          Join our newsletter to receive our latest news!
         </p>
         <p className='footer-subscription-text'>
           You can unsubscribe at any time.

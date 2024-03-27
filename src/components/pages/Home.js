@@ -8,7 +8,7 @@ function Home() {
   return (
     <>
       <HeroSection />
-      {<Vision/>}
+      <Vision/>
       <Footer />
     </>
   );
