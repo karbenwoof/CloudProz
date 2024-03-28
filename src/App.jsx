@@ -8,7 +8,7 @@ import Products from './components/pages/Products';
 import SignUp from './components/pages/SignUp';
 import { ChakraProvider } from '@chakra-ui/react'
 
-function App() {
+export default function App() {
   return (
     <ChakraProvider>
       <Router>
@@ -24,4 +24,4 @@ function App() {
   );
 }
 
-export default App;
+

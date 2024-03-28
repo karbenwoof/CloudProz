@@ -15,6 +15,9 @@ function Navbar() {
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
 
   const showButton = () => {
     if (window.innerWidth <= 960) {
@@ -34,7 +37,7 @@ function Navbar() {
     <>
       <nav className='navbar'>
         <div className='navbar-container'>
-          <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <Link to='/' className='navbar-logo' onClick={() => {closeMobileMenu(); scrollToTop();}} > 
             CloudProz
             <FontAwesomeIcon icon={faCloud} />
           </Link>
@@ -43,7 +46,7 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
+              <Link to='/' className='nav-links' onClick={() => {closeMobileMenu(); scrollToTop();}}>
                 Home
               </Link>
             </li>
@@ -51,7 +54,7 @@ function Navbar() {
               <Link
                 to='/services'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={() => {closeMobileMenu(); scrollToTop();}}
               >
                 Why us?
               </Link>
@@ -60,7 +63,7 @@ function Navbar() {
               <Link
                 to='/products'
                 className='nav-links'
-                onClick={closeMobileMenu}
+                onClick={() => {closeMobileMenu(); scrollToTop();}}
               >
                 Product
               </Link>
@@ -70,14 +73,14 @@ function Navbar() {
               <Link
                 to='/sign-up'
                 className='nav-links-mobile'
-                onClick={closeMobileMenu}
+                onClick={() => {closeMobileMenu(); scrollToTop();}}
               >
                 Sign Up
               </Link>
             </li>
           </ul>
           {button && <ChakraLink as={ReactRouterLink} to='/sign-up'>
-              <Button colorScheme='gray' variant='solid' size='md'>
+              <Button colorScheme='gray' variant='solid' size='md' onClick={() => {closeMobileMenu(); scrollToTop();}}>
               SIGN UP
               </Button>
             </ChakraLink>
