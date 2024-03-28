@@ -12,6 +12,8 @@ export default function SignUp() {
   const [email, setEmail] = React.useState('');
   const [purpose, setPurpose] = React.useState('');
 
+  const handleSubmit = (event) => {};
+
   return (
     <>
       <div className='sign-up'>
@@ -65,7 +67,7 @@ export default function SignUp() {
               <option value='option1'>UC Berkeley</option>
               <option value='option2'>Stanford University</option>
             </Select>*/}
-            <Button colorScheme='gray' variant='outline' size='lg'>
+            <Button colorScheme='gray' variant='outline' size='lg' onClick={handleSubmit}>
               GET STARTED
             </Button>
               
