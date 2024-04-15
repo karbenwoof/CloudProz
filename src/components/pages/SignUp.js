@@ -3,7 +3,7 @@ import '../../App.css';
 import CardItem from '../CardItem';
 import './SignUp.css';
 import Footer from '../Footer';
-import { Button, ButtonGroup, Input, Stack, Select, Text } from '@chakra-ui/react'
+import { Button, ButtonGroup, Input, Stack, Select, Text, useColorModeValue } from '@chakra-ui/react'
 
 
 
@@ -11,6 +11,8 @@ export default function SignUp() {
   const [name, setName] = React.useState('');
   const [email, setEmail] = React.useState('');
   const [purpose, setPurpose] = React.useState('');
+
+  const white = useColorModeValue("white", "gray.800")
 
   const handleSubmit = (event) => {};
 
@@ -68,7 +70,7 @@ export default function SignUp() {
               <option value='option2'>Stanford University</option>
             </Select>*/}
             <Button colorScheme='gray' variant='outline' size='lg' onClick={handleSubmit}>
-              <Text colorScheme='gray'>GET STARTED</Text>
+              <Text colorScheme='white'>GET STARTED</Text>
             </Button>
               
           </Stack>
