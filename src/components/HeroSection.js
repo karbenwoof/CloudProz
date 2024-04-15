@@ -3,6 +3,8 @@ import { useRef } from 'react';
 import '../App.css';
 import './HeroSection.css';
 import { Vision } from './Vision';
+import SignUpForm from './SignUpForm';
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {
   faDollarSign,
@@ -47,6 +49,7 @@ function HeroSection() {
           </Button>
         </ChakraLink>
       </ButtonGroup>
+      
     </div>
   );
 }

@@ -10,7 +10,7 @@ import { Button, ButtonGroup } from '@chakra-ui/react'
 function Footer() {
   return (
     <div className='footer-container'>
-      <section className='footer-subscription'>
+      {/*<section className='footer-subscription'>
         <p className='footer-subscription-heading'>
           Join our newsletter to receive our latest news!
         </p>
@@ -28,7 +28,7 @@ function Footer() {
             <Button buttonStyle='btn--outline'>Subscribe</Button>
           </form>
         </div>
-      </section>
+  </section>*/}
       <div class='footer-links'>
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>

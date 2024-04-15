@@ -3,6 +3,7 @@ import '../../App.css';
 import Vision from '../Vision';
 import HeroSection from '../HeroSection';
 import Footer from '../Footer';
+import SignUpForm from '../SignUpForm';
 
 function Home() {
   return (
