@@ -69,8 +69,8 @@ export default function SignUp() {
               <option value='option1'>UC Berkeley</option>
               <option value='option2'>Stanford University</option>
             </Select>*/}
-            <Button colorScheme='gray' variant='outline' size='lg' onClick={handleSubmit}>
-              <Text colorScheme='white'>GET STARTED</Text>
+            <Button colorScheme='white' variant='outline' size='lg' onClick={handleSubmit}>
+              GET STARTED
             </Button>
               
           </Stack>
