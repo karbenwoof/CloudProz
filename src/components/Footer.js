@@ -8,6 +8,9 @@ import {
 import { Button, ButtonGroup } from '@chakra-ui/react'
 
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo(0, 0)
+}
   return (
     <div className='footer-container'>
       {/*<section className='footer-subscription'>
@@ -56,7 +59,10 @@ function Footer() {
       <section class='social-media'>
         <div class='social-media-wrap'>
           <div class='footer-logo'>
-            <Link to='/' className='social-logo'>
+            <Link to='/' 
+            className='social-logo'
+            onClick={scrollToTop}
+            >
               CloudProz
               <FontAwesomeIcon icon={faCloud} />
             </Link>

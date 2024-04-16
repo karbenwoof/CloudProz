@@ -18,8 +18,7 @@ import { Link as ChakraLink, LinkProps } from '@chakra-ui/react'
 function HeroSection() {
   
   const ScrollDemo = () => {
-    const myRef = useRef(null)
- 
+  const myRef = useRef(null)
     const executeScroll = () => myRef.current.scrollIntoView()    
     // run this function from an event handler or an effect to execute scroll 
  
@@ -30,6 +29,10 @@ function HeroSection() {
        </>
     )
  }
+
+ const scrollToTop = () => {
+  window.scrollTo(0, 0)
+}
   return (
     <div className='hero-container'>
       {/*<video src='/videos/video-1.mp4' autoPlay loop muted />*/}
@@ -44,6 +47,7 @@ function HeroSection() {
         <ChakraLink as={ReactRouterLink} to='/products'>
           <Button colorScheme='orange' variant='solid' size='lg'
           rightIcon={<FontAwesomeIcon icon={faComputer} />}
+          onClick={scrollToTop}
           >
             OUR PRODUCT
           </Button>

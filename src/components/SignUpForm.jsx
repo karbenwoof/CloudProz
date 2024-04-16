@@ -39,7 +39,7 @@ export default function SignUpForm() {
   return (
     <form class='input' onSubmit={handleSubmit(onSubmit)}>
       <FormControl isInvalid={errors.name}>
-        <FormLabel htmlFor='name' pb='1'>Please fill your information</FormLabel>
+        <FormLabel htmlFor='name' pb='1' color='white'>Please fill your information</FormLabel>
         <Input
             id='name'
             name='name'
