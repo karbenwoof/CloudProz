@@ -49,6 +49,7 @@ export default function SignUpForm() {
             width='120%'
             variant='outline'
             borderColor='gray.300'
+            color='white'
           {...register('name', {
             required: 'This field is required',
           })}
@@ -68,6 +69,7 @@ export default function SignUpForm() {
             width='120%'
             variant='outline'
             borderColor='gray.300'
+            color='white'
             {...register('email', {
             required: 'This field is required',
           })}
@@ -87,6 +89,7 @@ export default function SignUpForm() {
             width='120%'
             variant='outline'
             borderColor='gray.300'
+            color='white'
             {...register('purpose', {
             required: 'This field is required',
             })}
