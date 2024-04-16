@@ -98,8 +98,8 @@ export default function SignUpForm() {
       <Flex justifyContent="center" alignItems="center">
         <Button mt={7} 
           ml='10' 
-          colorScheme='white' 
-          variant='outline' 
+          colorScheme='gray' 
+          variant='solid' 
           size='lg' 
           isLoading={isSubmitting} 
           type='submit' 
