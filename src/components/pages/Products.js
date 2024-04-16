@@ -35,7 +35,7 @@ export default function Products() {
               </Button>
             </Link>
           </Text>
-          <Text fontSize='xl'>Prior to utilizing CloudPi, please sign up for an access our product.
+          <Text fontSize='xl'>Prior to utilizing CloudPi, please sign up for an access to our product.
 
 
 
