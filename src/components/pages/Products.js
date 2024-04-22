@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+
 import Footer from '../Footer';
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
@@ -37,11 +38,12 @@ export default function Products() {
           </Text>
           <Text fontSize='xl'>Prior to utilizing CloudPi, please sign up for an access to our product.</Text>
           <Text fontSize='2xl' pt='10'>Here you can find a tutorial video using our product.</Text>
-          <iframe width="1080" height="720" 
-          src="https://www.youtube.com/embed/axAXF9ArMh8?si=15d3Tfd0yCHgUR7E" 
-          title="YouTube video player" frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+      
+            <iframe  width='50%' height={window.innerWidth > 800 ? '500' : '300'}
+            src="https://www.youtube.com/embed/axAXF9ArMh8?si=15d3Tfd0yCHgUR7E" 
+            title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
         </Stack>
       </div>
 

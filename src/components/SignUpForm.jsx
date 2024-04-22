@@ -19,7 +19,7 @@ export default function SignUpForm() {
   } = useForm()
 
   const sendEmail = (values) => {
-    emailjs.send('service_n4b7uid', 'template_mskdl09', values, 'nrQInqDylrcXYlk9I')
+    emailjs.send('service_1htibvt', 'template_7ehacia', values, 'QOR0n99vvu_oF8MkC')
 
     return false;
   }
