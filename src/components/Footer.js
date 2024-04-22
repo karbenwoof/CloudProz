@@ -76,23 +76,23 @@ function Footer() {
           <small class='website-rights'>CloudProz © 2024</small>
           <div class='social-icons'>
             <ChakraLink href='https://www.facebook.com/people/CloudProz/61558540810750/' isExternal>
-              <FontAwesomeIcon size='xl' icon={faFacebook} />
+              <FontAwesomeIcon size='xl' style={{color: '#ffffff'}} icon={faFacebook} />
             </ChakraLink>
 
             <ChakraLink href='' isExternal>
 
-              <FontAwesomeIcon size='xl' icon={faInstagram} />
+              <FontAwesomeIcon size='xl' style={{color: '#ffffff'}} icon={faInstagram} />
             </ChakraLink>
             <ChakraLink href='' isExternal>
 
-              <FontAwesomeIcon size='xl' icon={faYoutube} />
+              <FontAwesomeIcon size='xl' style={{color: '#ffffff'}} icon={faYoutube} />
             </ChakraLink>
             <ChakraLink href='https://twitter.com/CloudProzAI' isExternal>
 
-              <FontAwesomeIcon size='xl' icon={faTwitter} />
+              <FontAwesomeIcon size='xl' style={{color: '#ffffff'}} icon={faTwitter} />
             </ChakraLink>
             <ChakraLink href='https://www.linkedin.com/company/cloud-proz-ai/' isExternal>
-              <FontAwesomeIcon size='xl' icon={faLinkedin} />
+              <FontAwesomeIcon size='xl' style={{color: '#ffffff'}} icon={faLinkedin} />
             </ChakraLink>
           </div>
         </div>
