@@ -1,11 +1,16 @@
 import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faCloud,
-} from "@fortawesome/free-solid-svg-icons"
-import { Button, ButtonGroup } from '@chakra-ui/react'
+  faLink,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faTwitter, faFacebook, faInstagram, faYoutube, faLinkedin
+} from "@fortawesome/free-brands-svg-icons";
+import { Button, ButtonGroup } from '@chakra-ui/react';
+import {Link as ChakraLink, LinkProps} from '@chakra-ui/react';
 
 function Footer() {
   const scrollToTop = () => {
@@ -36,12 +41,12 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>About Us</h2>
-            <Link to='/sign-up'>How it works</Link>
+            <Link to='/products' onClick={scrollToTop}>How it works</Link>
             <Link to='/'>Terms of Service</Link>
           </div>
           <div class='footer-link-items'>
             <h2>Contact Us</h2>
-            <Link to='/'>Contact</Link>
+            <ChakraLink href='mailto:services@cloud-proz.com' isExternal>Contact</ChakraLink>
             <Link to='/'>Support</Link>
             <Link to='/'>Sponsorships</Link>
           </div>
@@ -49,10 +54,11 @@ function Footer() {
         <div className='footer-link-wrapper'>
           <div class='footer-link-items'>
             <h2>Social Media</h2>
-            <Link to='/'>Instagram</Link>
-            <Link to='/'>Facebook</Link>
-            <Link to='/'>Youtube</Link>
-            <Link to='/'>Twitter</Link>
+            <ChakraLink href='https://www.facebook.com/people/CloudProz/61558540810750/' isExternal>Facebook</ChakraLink>
+            <ChakraLink href='' isExternal>Instagram</ChakraLink>
+            <ChakraLink href='' isExternal>Youtube</ChakraLink>
+            <ChakraLink href='https://twitter.com/CloudProzAI' isExternal>Twitter</ChakraLink>
+            <ChakraLink href='https://www.linkedin.com/company/cloud-proz-ai/' isExternal>LinkedIn</ChakraLink>
           </div>
         </div>
       </div>
@@ -69,46 +75,25 @@ function Footer() {
           </div>
           <small class='website-rights'>CloudProz © 2024</small>
           <div class='social-icons'>
-            <Link
-              class='social-icon-link facebook'
-              to='/'
-              target='_blank'
-              aria-label='Facebook'
-            >
-              <i class='fab fa-facebook-f' />
-            </Link>
-            <Link
-              class='social-icon-link instagram'
-              to='/'
-              target='_blank'
-              aria-label='Instagram'
-            >
-              <i class='fab fa-instagram' />
-            </Link>
-            <Link
-              class='social-icon-link youtube'
-              to='/'
-              target='_blank'
-              aria-label='Youtube'
-            >
-              <i class='fab fa-youtube' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='Twitter'
-            >
-              <i class='fab fa-twitter' />
-            </Link>
-            <Link
-              class='social-icon-link twitter'
-              to='/'
-              target='_blank'
-              aria-label='LinkedIn'
-            >
-              <i class='fab fa-linkedin' />
-            </Link>
+            <ChakraLink href='https://www.facebook.com/people/CloudProz/61558540810750/' isExternal>
+              <FontAwesomeIcon size='xl' icon={faFacebook} />
+            </ChakraLink>
+
+            <ChakraLink href='' isExternal>
+
+              <FontAwesomeIcon size='xl' icon={faInstagram} />
+            </ChakraLink>
+            <ChakraLink href='' isExternal>
+
+              <FontAwesomeIcon size='xl' icon={faYoutube} />
+            </ChakraLink>
+            <ChakraLink href='https://twitter.com/CloudProzAI' isExternal>
+
+              <FontAwesomeIcon size='xl' icon={faTwitter} />
+            </ChakraLink>
+            <ChakraLink href='https://www.linkedin.com/company/cloud-proz-ai/' isExternal>
+              <FontAwesomeIcon size='xl' icon={faLinkedin} />
+            </ChakraLink>
           </div>
         </div>
       </section>

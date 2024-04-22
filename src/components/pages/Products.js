@@ -24,7 +24,7 @@ export default function Products() {
       <div className='products'>
         <Stack spacing={8} align="center">
           <h1 >Introducing CloudPi</h1>
-          <Box w ='50%' fontSize='2xl' color='white'> 
+          <Box w ='50%' fontSize='2xl' color='white' pt='5'> 
           We are pleased to unveil CloudPi, an innovative cloud computing platform meticulously crafted to seamlessly integrate with Raspberry Pi devices. CloudPi represents a sophisticated yet accessible solution designed to cater to the needs of students, educators, and enthusiasts alike.
           </Box>
           <Text fontSize='4xl' pt='10'>Here is our CloudPi GitHub repository {' '}
@@ -36,10 +36,10 @@ export default function Products() {
               </Button>
             </Link>
           </Text>
-          <Text fontSize='xl'>Prior to utilizing CloudPi, please sign up for an access to our product.</Text>
-          <Text fontSize='2xl' pt='10'>Here you can find a tutorial video using our product.</Text>
+          <Text fontSize='xl' pb='5'>Prior to utilizing CloudPi, please sign up for an access to our product.</Text>
+          <Text fontSize='2xl' pt='10' pb='5'>You can find a tutorial video of utilizing our product below.</Text>
       
-            <iframe  width='50%' height={window.innerWidth > 800 ? '500' : '300'}
+            <iframe width='50%' height={window.innerWidth > 800 ? '500' : '300'}
             src="https://www.youtube.com/embed/axAXF9ArMh8?si=15d3Tfd0yCHgUR7E" 
             title="YouTube video player" frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
