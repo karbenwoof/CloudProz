@@ -23,7 +23,7 @@
 
 
 .services {
-  background-image: url('/src/images/img-10.jpg');
+  background-image: url('/src/images/img-10s.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,7 +32,7 @@
 }
 
 .products {
-  background-image: url('/src/images/img-14.jpg');
+  background-image: url('/src/images/img-14s.jpg');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
